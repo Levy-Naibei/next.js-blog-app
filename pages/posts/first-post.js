@@ -1,6 +1,13 @@
+import Link from 'next/link'
+
 const FirstPost = () => {
     return (
-        <h3>This is the first post. I enjoy next.js</h3>
+        <>
+            <h2>First blog post</h2>
+            <h3>
+               <Link href='/'><a>Back to Home page</a></Link>
+            </h3>
+        </>
     )
 }
 

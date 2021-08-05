@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
@@ -6,14 +7,13 @@ const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>my blog</title>
-        <meta name="description" content="levy naibei my blog in next.js" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+          <title>my blog</title>
+          <meta name="description" content="levy naibei my blog in next.js" />
+          <link rel="icon" href="/favicon.ico" />
+      </Head> 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Learn <a href="https://nextjs.org">Next.js!</a>
+          Read {' '} <Link href="/posts/first-post"> This!</Link>
         </h1>
 
         <p className={styles.description}>
